@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Choose from "./pages/Choose";
+import Homepage from "./pages/Homepage";
+import Recipe from "./pages/Recipe";
+import Select from "./pages/Select";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Routes>
+        <Route key="/" path="/" element={<Homepage />} />
+        <Route key="/Select" path="/Select" element={<Select />} />
+        <Route key="/Choose" path="/Choose" element={<Choose />} />
+        <Route key="/Recipe" path="/Recipe" element={<Recipe />} />
+      </Routes>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+// FROM /Cookbook node server.js
+// FROM /Cookbook/client npm start

@@ -1,0 +1,28 @@
+.pullMenu {
+  color: white;
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3rem;
+  z-index: 3;
+}
+
+.pullMenuItem {
+  width: 6rem;
+  height: 3rem;
+  float: right;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pullMenuItem:hover {
+  background-color: grey;
+}
+
+.pullMenuText {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 25%;
+}

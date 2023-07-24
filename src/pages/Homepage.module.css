@@ -1,0 +1,38 @@
+.main {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainText {
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.button_item {
+  height: 2rem;
+  width: 12rem;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 0.1rem solid;
+  border-radius: 1rem;
+}
+
+.button_item:hover {
+  color: black;
+  background-color: white;
+  border-color: grey;
+}
+
+@media (min-width: 40rem) {
+  .mainText {
+    font-size: 8rem;
+    margin-bottom: 0;
+  }
+}

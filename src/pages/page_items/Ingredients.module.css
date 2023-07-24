@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.item_container {
+  display: flex;
+  color: white;
+  margin-top: 0.5rem;
+  border: white solid 0.1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.item_quantity {
+  width: 33%;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.item_unit {
+  width: 33%;
+  font-weight: bold;
+}
+
+.item_ingredient {
+  margin: auto;
+  width: 33%;
+  font-weight: bold;
+}
+
+.item_quantity--title {
+  width: 33%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  margin-right: 3rem;
+  margin-left: -3rem;
+}
+
+.item_unit--title {
+  width: 33%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item_ingredient--title {
+  margin: auto;
+  width: 33%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.item_container--title {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.item_button--title {
+  display: none;
+}
+
+.main:last-child {
+  margin-bottom: 3rem;
+}
+
+.servings {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border: white solid 0.1rem;
+  border-radius: 1rem;
+  width: 3rem;
+}
+
+.item_container:hover {
+  background-color: white;
+  color: black;
+}
+
+.item_container--active {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 40rem) {
+  .item_quantity--title {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
